@@ -12,9 +12,9 @@ public class Test11 {
 		
 		
 		
-		System.out.println(a*(b%10));
-		System.out.println(a*(b/10%10));
-		System.out.println(a*(b/100));
+		System.out.println(a*(b%10));//5
+		System.out.println(a*(b/10%10));//8
+		System.out.println(a*(b/100));//3
 		
 		
 		System.out.println(a*b);
