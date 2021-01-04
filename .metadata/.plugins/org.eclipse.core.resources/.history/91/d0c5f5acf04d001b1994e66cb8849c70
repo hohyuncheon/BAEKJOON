@@ -1,0 +1,31 @@
+package step4;
+
+import java.util.Scanner;
+
+public class Test3 {
+	
+	public static void main(String[] args) {
+		int input, front, back, sum=-1;
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("0이상 99이하인 정수 입력 : ");
+		input = sc.nextInt();
+		
+		int count=0;
+		sum=input;
+		System.out.println(sum);
+		
+		if(input<10)
+			sum=input*10;
+		else
+			sum=input;
+		do{
+			front = sum/10;
+			back = sum%10;
+			sum=back*10 + (front+back)%10;
+			System.out.print(front+"+"+back +"="+(front+back)+"이다. 새로운 수는 "+sum+"이다. ");
+			count++;
+		}while(input!=sum);
+		System.out.println(count);
+	}
+}

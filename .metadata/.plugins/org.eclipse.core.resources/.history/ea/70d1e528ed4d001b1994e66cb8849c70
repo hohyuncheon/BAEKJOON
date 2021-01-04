@@ -1,0 +1,21 @@
+package step4;
+
+import java.util.Scanner;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("몇번 돌릴까요");
+		int num = sc.nextInt();
+		
+		
+		int i = 0;
+		while(i>num) {
+			
+		}i++
+		
+		
+	}
+}

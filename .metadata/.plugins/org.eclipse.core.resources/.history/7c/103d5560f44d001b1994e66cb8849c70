@@ -1,0 +1,53 @@
+package step5;
+
+import java.util.Scanner;
+
+//문제
+//N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프로그램을 작성하시오.
+//입력
+//첫째 줄에 정수의 개수 N (1 ≤ N ≤ 1,000,000)이 주어진다. 둘째 줄에는 N개의 정수를 공백으로 구분해서 주어진다. 모든 정수는 -1,000,000보다 크거나 같고, 1,000,000보다 작거나 같은 정수이다.
+//출력
+//첫째 줄에 주어진 정수 N개의 최솟값과 최댓값을 공백으로 구분해 출력한다.
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("정수를 입력하시오");
+		int num = sc.nextInt();
+		
+		//배열생성
+		int [] array = new int[num];
+		
+		//0번지에 1번째 입력받은 값 입력
+		int max = 0;
+		int min = 0;
+	
+		//배열에 각각 값입력
+		for (int i = 0; i < array.length; i++) {
+			array[i]=sc.nextInt();
+			max = array[0];
+			min = array[0];
+			
+			if(array[i]>max) {
+				max=array[i];
+			}
+			if(array[i]<=min) {
+				min=array[i];
+			}
+		}
+		
+		
+		System.out.println("max : "+max);
+		System.out.println("min : "+min);
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
