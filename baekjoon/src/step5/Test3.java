@@ -14,27 +14,40 @@ public class Test3 {
 
 		int total = num1 * num2 * num3;
 
-		String change = String.valueOf(total);
+		System.out.println("3개곱한 값은" + total);
 
-		System.out.println("3개곱한 값은" + change);
+//		 배열생성 후 배열에 한 글자씩 넣기.
+//		char change = String.valueOf()
 
-		// 배열생성
-		char[] ch = new char[change.length()];
+//		char value_char  = (char)total;
+//		System.out.println(value_char);
 
-		int [] count = new int[];
+		for (int i = 0; i < total; i++) {
+			char[] ch = new char[(char) total];
 
-		// 값넣기
-		for (int i = 0; i < ch.length; i++) {
-			ch[i] = change.charAt(i);
+		}
+		// 나온 값 스트으로 변환 후 각각의 char 배열에 한글자씩 대입
+		String temp = String.valueOf(num1 * num2 * num3);
 
-			for (int j = 0; j < ch.length; j++) {
-				if (j == ch[i]) {
-					count[i]++;
+		char[] arr1 = new char[temp.length()];
+		for (int i = 0; i < temp.length(); i++) {
+			arr1[i] = temp.charAt(i);
+		}
 
+		// 각각의 배열에 한 글짜씩 대입
+		for (int i = 0; i < arr1.length; i++) {
+			System.out.println(arr1[i]);
+		}
+
+		int count = 0;
+		
+		for (int i = 0; i < arr1.length; i++) {
+			for (int j = 0; j < arr1.length; j++) {
+				if (arr1[i] == j) {
+					count++;
 				}
 			}
-			System.out.println(i + " = count : " + count);
-
+			System.out.println(i + "과 같은 값은"+ count+"개");
 		}
 	}
 }

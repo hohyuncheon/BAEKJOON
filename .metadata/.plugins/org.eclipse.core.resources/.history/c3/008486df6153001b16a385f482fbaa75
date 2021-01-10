@@ -1,0 +1,21 @@
+package step5;
+
+public class test6 {
+
+	public static void main(String[] args) {
+		
+		String [] st = new String[10];
+		st[0]= "OOXXOXXOOO";
+		
+		
+		//배열을 char로 변환하여 배열 값대입
+		char[] ch = new char[st.length];
+		
+		for (int i = 0; i < st.length; i++) {
+			ch[i]=st[0].charAt(i);
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package step6;
+
+import java.util.Scanner;
+
+public class test1 {
+
+	public static void main(String[] args) {
+		test1 t = new test1();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("몇번 입력할까요");
+		int num = sc.nextInt();
+		
+	}
+	
+	public long sum(int[] a) {
+		return 0;
+		
+	}
+}
+

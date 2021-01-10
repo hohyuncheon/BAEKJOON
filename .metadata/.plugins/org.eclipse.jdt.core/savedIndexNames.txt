@@ -4,7 +4,6 @@ INDEX VERSION 1.131+C:\dev\Workspaces\algorithm\.metadata\.plugins\org.eclipse.j
 181300948.index
 1275827836.index
 2638387521.index
-616840867.index
 4239543045.index
 3456519261.index
 2861620101.index

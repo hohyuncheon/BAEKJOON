@@ -1,0 +1,17 @@
+package step5;
+
+import java.util.Scanner;
+
+public class Test4 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("정수 10개 입력해보세요 42로 나눈  서로 다른게 몇번 나왔는지 구해드립니다.");
+		int num1 = sc.nextInt();
+		int num2 = sc.nextInt();
+		int num3 = sc.nextInt();
+		
+		
+	}
+}

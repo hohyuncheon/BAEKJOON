@@ -1,0 +1,32 @@
+package step5;
+
+public class test6 {
+
+	public static void main(String[] args) {
+
+		String[] st = new String[10];
+		st[0] = "OOXXOXXOOO";
+
+		// 배열을 char로 변환하여 배열 값대입
+		char[] ch = new char[st.length];
+
+		for (int i = 0; i < st.length; i++) {
+			ch[i] = st[0].charAt(i);
+		}
+		
+		int count = 0;
+		int sum = 0;
+		// 배열 검사 후 카운트
+
+		// O과 같으면 카운트올리기
+		for (int i = 0; i < ch.length; i++) {
+			if (ch[i] == 'O') {
+				sum += ++count;
+			
+			} else if (ch[i] == 'X') {
+				count=0;
+			}
+		}
+		System.out.println(sum);
+	}
+}

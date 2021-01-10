@@ -1,0 +1,26 @@
+package step5;
+
+import java.util.Scanner;
+
+public class test7 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("몇번 반복할건가요");
+		
+		//입력받은 값 만큼 배열 생성
+		int[] num = new int[sc.nextInt()];
+		
+		
+		//입력받은 값 만큼 반복
+		for (int i = 0; i < num.length; i++) {
+			
+			
+			
+			
+			
+		}
+
+	}
+
+}

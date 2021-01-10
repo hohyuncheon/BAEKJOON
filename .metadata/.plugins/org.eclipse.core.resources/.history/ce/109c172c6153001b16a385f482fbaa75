@@ -1,0 +1,15 @@
+package step5;
+
+public class test6 {
+
+	public static void main(String[] args) {
+		
+		String [] ch = new String[10];
+		
+		ch[0]= 
+		
+		
+
+	}
+
+}

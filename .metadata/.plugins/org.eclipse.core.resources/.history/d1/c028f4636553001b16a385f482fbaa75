@@ -1,0 +1,14 @@
+package step5;
+
+import java.util.Scanner;
+
+public class test7 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("몇번 반복할건가요");
+		sc.nextInt();
+
+	}
+
+}

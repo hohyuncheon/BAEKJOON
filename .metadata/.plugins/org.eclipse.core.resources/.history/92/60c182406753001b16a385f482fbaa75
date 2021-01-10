@@ -1,0 +1,45 @@
+package step5;
+
+import java.util.Scanner;
+
+public class test7 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("몇번 반복할건가요");
+		
+		//입력받은 값 만큼 배열 생성
+		double[] num = new double[sc.nextInt()];
+		
+		//70//90//80
+		
+		//합계
+		double sum = 0;
+		
+		//평균
+
+		//입력받은 값 만큼 반복
+		for (int i = 0; i < num.length; i++) {
+			System.out.println("정수입력하시오");
+			num[i]=sc.nextInt();
+			sum+=num[i];
+		}
+		System.out.println(sum);
+		
+		
+		double average=(sum/num.length);//80이 나온다.
+		
+		
+		int count=0;
+		for (int i = 0; i < num.length; i++) {
+			if(num[i]>average) {
+				count++;
+			}
+			
+		}
+		
+		
+		System.out.println(average);
+		
+	}
+}
